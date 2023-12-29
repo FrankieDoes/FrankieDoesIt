@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+
+
+    <!-- MAIN HEADER -->
+    <header class="primary-header ">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#home" class="logo">Francisco Fiago</a>
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="priamry-navigation">
+            <ul role="list" class="nav-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </nav>
+          <button class="button | display-sm-none display-md-inline-flex">
+            Contact
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+
+
+      <!-- HOME -->
+      <section class="home | padding-block-900 ff-primary">
+        <div class="container flow">
+          <h1 class="text-accent-1 fw-bold fs-primary-heading">
+            Francisco Fiago
+          </h1>
+          <p>I'm an Aspiring Web Developer With Some Projects to Show</p>
+          <button class="button">Projects</button>
+        </div>
+      </section>
+
+
+      <!-- ABOUT -->
+      <section class="about | padding-block-900 bg-grey-light">
+        <div class="container flow">
+          <h2 class="sub-heading fw-bold">About Me</h2>
+          <p>
+            Here you'll learn about me and my current skills in terms of
+            programming and technology
+          </p>
+
+          <div class="even-columns | padding-block-700">
+            <div class="even-column flow">
+              <h3 class="fw-bold">Get to Know me</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+                sequi laborum quam voluptas maxime rem provident. Ducimus a rem
+                quaerat ipsa repellendus voluptatibus suscipit, alias cupiditate
+                nobis eligendi ut quidem.
+              </p>
+              <button class="button">Contact</button>
+            </div>
+            <div class="even-column flow">
+              <h3 class="fw-bold">My Skills</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Excepturi fugiat neque eos inventore iusto ipsum expedita
+                perspiciatis
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- PROJECTS -->
+      <section class="projects | padding-block-900 bg-grey ff-primary">
+        <div class="container">
+        <h2 class="sub-heading fw-bold projects-heading">Projects</h2>
+        <p>
+          Here you'll find some of the projects that I've done in the process of
+          becoming a Web Developer
+        </p>
+
+        <div class="projects-container container">
+
+          <div class="project-card">
+            <!--<div class="project-text">
+              <h3>Jocko Willink's Project</h3>
+             </div>-->
+            <div class="card-image">
+              <img class="project-img" src="images/jocko.png" alt="project 1" />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <!--<div class="project-text">
+              <h3>Survey Form Project</h3>
+            </div>-->
+            <div class="card-image">
+              <img class="project-img" src="images/survey.png" alt="project 2" />
+            </div>
+          </div>
+
+        </div>
+
+        <button class="button">Visit</button>
+      </div>
+      </section>
+
+
+      <!-- CONTACT -->
+      <section class="contact | padding-block-900 bg-grey-light ff-primary">
+        <div class="container flow">
+          <h2 class="sub-heading fw-bold">Contact</h2>
+          <p>
+            Feel free to contact me by submitting the form below <br />
+            I'll get back to you as soon as possible
+          </p>
+          <div class="contact-form container">
+            <form action="">
+              <div class="contact-container">
+                <label class="contact-label" for="name">Name:</label>
+                <br />
+                <input
+                  class="contact-input input-small"
+                  type="text"
+                  id="name"
+                  required
+                  placeholder="Enter Your Name"
+                />
+                <br />
+              </div>
+              <div class="contact-container">
+                <label class="contact-label" for="email">Email:</label>
+                <br />
+                <input
+                  class="contact-input input-small"
+                  type="email"
+                  id="email"
+                  required
+                  placeholder="Enter Your Email"
+                />
+                <br />
+              </div>
+              <div class="contact-container">
+                <label class="contact-label" for="message">Message:</label>
+                <br />
+                <textarea
+                  class="contact-input input-big"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  required
+                  placeholder="Enter Your Message"
+                ></textarea>
+                <br />
+              </div>
+              <button type="submit" class="button">Send It Over</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer class="footer | padding-block-700 bg-black text-white">
+        <div class="container | footer-container">
+          <div class="logo-footer">
+            <a href="#home" class="logo logo-footer">Francisco Fiago</a>
+          </div>
+          <div class="nav-footer">
+            <nav class="footer-nav">
+              <ul aria-label="footer" role="list" class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="socials-footer">
+            <h3 class="socials-title">Socials:</h3>
+            <ul class="social-list" role="list" aria-label="Social Links">
+              <li>
+                <a aria-label="Instagram" href=""
+                  ><svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a aria-label="LinkedIn" href=""
+                  ><svg class="social-icon">
+                    <use
+                      xlink:href="images/social-icons.svg#linkedin"
+                    ></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="copyright-footer">
+          <p>© Copyright 2023. Made by Francisco Fiago</p>
+        </div>
+      </footer>
+
+
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
